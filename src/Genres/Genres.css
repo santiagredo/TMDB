@@ -1,0 +1,50 @@
+@import url("../variables.css");
+
+
+.genre_container {
+    margin: 0 auto;
+    width: 95%;
+}
+
+.genre_container_title {
+    text-align: center;
+    font-size: 3rem;
+    color: var(--white);
+}
+
+.genre_single_container {
+    margin: 40px auto;
+    width: 100%;
+}
+
+.genre_single_container:hover, .genre_single_container:hover .genre_single_title {
+    cursor: pointer;
+    color: var(--blue);
+    font-size: 3.1rem;
+}
+
+.genre_single_image_container {
+    display: flex;
+    justify-content: center;
+}
+
+.genre_single_image_container img {
+    width: 100%;
+    max-width: 500px;
+}
+
+.genre_single_title {
+    text-align: center;
+    font-size: 3rem;
+    color: var(--white);
+}
+
+
+
+@media screen and (min-width: 768px) {
+    .genre_container {
+        display: grid;
+        grid-template-columns: repeat(4, 20%);
+        justify-content: space-around;
+   } 
+}

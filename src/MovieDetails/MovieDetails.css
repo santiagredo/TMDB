@@ -1,0 +1,158 @@
+@import url("../variables.css");
+
+.movie_container {
+    margin: 0 auto;
+    width: 95%;
+}
+
+.movie_details_image_container {
+    margin: auto;
+    width: 100%;
+}
+
+.movie_details_image_container img {
+    width: 100%;
+    max-width: 500px;
+}
+
+.movie_details_description_container {
+    /* text-align: center; */
+    color: var(--white);
+}
+
+.movie_details_description_container_title {
+    text-align: center;
+    font-size: 3rem;
+}
+
+.movie_details_description_container_tags {
+    margin: 10px auto;
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.movie_details_description_container_tags li{
+    font-size: 2rem;
+    list-style: none;
+}
+
+.movie_details_description_container_tags_middle {
+    margin: 0 20px 0 20px;
+}
+
+.movie_details_description_container_overview {
+    margin: 30px auto;
+
+    line-height: 2.75rem;
+    font-size: 2rem;
+    color: var(--white);
+}
+
+.movie_details_description_container_genres {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    font-size: 2rem;
+    color: var(--gray_blue);
+}
+
+.movie_details_description_container_genres li {
+    margin: 0 5px;
+
+    list-style: none;
+    font-size: 2rem;
+    color: var(--white);
+}
+
+.similar_movies_main_container_title {
+    margin: 20px;
+
+    text-align: center;
+    font-size: 3rem;
+    color: var(--white);
+}
+
+.similar_movies_main_container {
+    margin: 0 auto 30px;
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: 45% 45%;
+    justify-content: space-between;
+    row-gap: 30px;
+}
+
+.similar_movies_single_image_container {
+    width: 100%;
+}
+
+.similar_movies_single_image_container img {
+    width: 100%;
+    max-width: 500px;
+    height: 100%;
+}
+
+.similar_movies_single_container_title {
+    margin: 10px auto 0;
+
+    text-align: center;
+    font-size: 1.5rem;
+    color: var(--white);
+}
+
+.similar_movies_single_container:hover, .similar_movies_single_container:hover .similar_movies_single_container_title {
+    background-color: var(--dark_blue);
+    cursor: pointer;
+    color: var(--blue);
+}
+
+
+
+@media screen and (min-width: 768px) {
+    .movie_details_container {
+        display: grid;
+        grid-template-columns: auto auto;
+        column-gap: 30px;
+    }
+
+    .movie_details_description_container_title {
+        font-size: 5rem;
+    }
+
+    .movie_details_description_container_overview {
+        line-height: normal;
+        font-size: 3rem;
+    }
+
+    .movie_details_description_container_tags li, .movie_details_description_container_genres, .movie_details_description_container_genres li {
+        display: flex;
+        align-items: center;
+
+        font-size: 3rem;
+    }
+
+    .movie_details_description_container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .similar_movies_main_container {
+        grid-template-columns: repeat(4, 20%);
+        row-gap: 50px;
+    }
+
+    .similar_movies_main_container_title {
+        margin: 40px;
+        font-size: 5rem;
+    }
+
+    .similar_movies_single_container_title {
+        font-size: 2.5rem;
+    }
+}

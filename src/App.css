@@ -1,0 +1,20 @@
+@import url("./variables.css");
+
+/* @media screen and (min-width: 768px){
+    .main_aside_container {
+        display: grid;
+        grid-template-columns: 60% 40%;
+    }
+}
+
+
+
+@media screen and (min-width: 1024px){
+    .main_aside_container {
+        margin: 0 auto;
+        width: 80%;
+
+        display: grid;
+        grid-template-columns: 70% 30%;
+    }
+} */

@@ -1,0 +1,136 @@
+@import url("../variables.css");
+
+.main_container {
+    margin: 24px auto;
+
+    color: var(--white);
+}
+
+.main_title {
+    text-align: center;
+    font-size: var(--title_font_size);
+}
+
+.main_media_options {
+    margin: 24px auto;
+    width: 90%;
+
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 2rem;   
+
+    text-align: center;
+    font-size: 3rem;
+}
+
+.main_media_options a {
+    height: 3.6rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main_media_options a:hover {
+    cursor: pointer;
+}
+
+.main_media_options_anchor_active {
+    border-radius: 8px 8px 0 0;
+    background-color: var(--blue);
+    font-weight: bold;
+}
+
+.media_results_container {
+    margin: 0 auto;
+    width: 90%;
+
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 2rem;
+
+    text-align: center;
+}
+
+.single_media_container {
+    max-width: 500px;
+}
+
+.single_media_container:hover, .single_media_container h2:hover {
+    cursor: pointer;
+    color: var(--blue);
+}
+
+.single_media_container h2 {
+    margin-top: 1rem;
+
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 2rem;
+}
+
+.image_container {
+    position: relative;
+    width: 100%;
+    height: 80%;
+
+    border-radius: 40px;
+}
+
+.image_container img {
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+}
+
+.media_type {
+    position: absolute;
+    margin: .8rem;
+    top: 0;
+    right: 0;
+    width: 50%;
+
+    background-color: var(--blue);
+    border-radius: 9999px;
+    font-size: clamp(1.2rem, 2rem, 4rem);
+    color: white;
+    line-height: 1;
+    font-weight: bolder;
+}
+
+
+
+
+
+
+
+@media screen and (min-width: 768px){
+    .main_container {
+        margin: 24px 0;
+        /* width: 60%; */
+        align-items: stretch;
+    }
+
+    .media_results_container {
+        grid-template-columns: repeat(5, minmax(0, 1fr));
+    }
+
+}
+
+
+
+@media screen and (min-width: 1024px) {
+    .single_media_container h2 {
+        margin-top: 1rem;
+
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        font-size: 3rem;
+    }    
+}

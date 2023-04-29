@@ -1,0 +1,38 @@
+@import url("../variables.css");
+
+.footer_container {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: centerki;
+}
+
+.footer_title {
+    margin: 0 auto;
+
+    font-size: 3rem;
+    color: var(--white);
+}
+
+.footer_icons_container {
+    display: flex;
+    justify-content: center;
+}
+
+.image_icons {
+    width: 24px;
+    margin: 15px;
+}
+
+
+
+@media screen and (min-width: 768px){
+    .footer_title {
+        font-size: 5rem;
+    }
+
+    .image_icons {
+        width: 36px;
+    }
+}
