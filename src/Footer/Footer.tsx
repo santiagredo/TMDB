@@ -15,7 +15,7 @@ export function Footer () {
                         <img className="image_icons" alt="LinkedIn Icon" src={linkedin_icon}/>
                     </span>
                 </a>
-                <a href="" target="_blank">
+                <a href="https://github.com/santiagredo/TMDB" target="_blank">
                     <span>
                         <img className="image_icons" alt="Github icon" src={github_icon}/>
                     </span>
