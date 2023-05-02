@@ -79,7 +79,8 @@ export function Hero () {
                     animationDuration={1000}
                     animationType="slide"
                     infinite
-                    touchTracking={false}
+                    touchTracking={true}
+                    keyboardNavigation={true}
                     disableButtonsControls
                     controlsStrategy="alternate"
 
